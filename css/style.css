@@ -1,2 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    font-family: Raleway;
+    }
+.page{
+    width: 100%;
+    max-width: 1440px;
+    margin:0 auto; 
+}
+a{
+    text-decoration: none;
+    color:black
+}
+
+
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  
+}
+    
+
+
+
+header > a > img{
+   width: 61px;
+  margin-top: 44px;
+  
+}
+
+header > nav{
+    display:flex;
+    gap: 15px;
+  
+    
+    
+
+}
+header > nav > a{
+  padding-top: 48px;  
+  padding-left: 25px;
+  padding-right:  25px;
+  display:inline-block;
+  border-top: transparent 2px solid;
+}
+header > nav > a:hover{
+    border-top: #0065fc 2px solid;
+    color:#0065Fc;
+   
+}
+
+main >div >h1{
+
+    font-size: 19px;
+
+}
+main >div >p{
+    font-size: 16px;
+}
+#searchBar{
+display:flex;
+flex-direction:row ;
+}
+
+#input-main-location {
+
+    height: 49px;
+    width: 332px;
+    left: 55px;
+    top: 199px;
+    border-radius: 0px;
+    
+
+        
+}
+#location{
+    display: flex;
+    flex-direction: row;
+    height: 18px;
+width: 14px;
+left: 18px;
+top: 16px;
+border-radius: 0px;
+
+}
+#search-bar {
+    display: flex;
+     height: 45px;
+     margin-top: 15px ;
+}
+#button-search{
+    display:flex;
+    flex-direction: row;
+    background-color: #0065Fc;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border:none; 
+    width: 132px;
+    height: 49px;
+
+}
+#magnifying-glass {
+    display:none; 
+    
+}
+#location{
+    display:flex;
+    width: 50px;
+    height: 49px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0 0 15px ;
+    background-color: #F2F2F2;
+
+}
+
+.filterBar{
+    
+    display: flex;
+    margin : 17px;
+    font-size: 12px;
+}
+
+
+.iconsFilter i{
+  
+    display: flex;
+    flex-direction: row;
+    align-items: CENTER ;
+    padding: 10px 0px 10px 10px;
+    gap: 10px;
+    width: 22px;
+    height: 22px;
+    color:#0065Fc;
+    border-radius: 100%;
+    height: 10px;
+   justify-content:center ;
+    margin: -2px;
+  
+}
+.iconsFilter div{
+   display:flex;
+    align-items:center;
+    border: 2px solid #d9d9d9; 
+    margin: 15px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    width: 175px;
+    height: 48px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  
+}
+
+.iconsFilter :hover{
+    background-color: #deebff;
+}
+
+.info i {
+color:#0065Fc;
+
+
+}
+
+.info p {
+    display: initial ;
+    margin : 17px;
+    font-size: 12px;
+   
+}   
+.info{
+    height: 24px;
+    width: 447px;
+    left: 59px;
+    top: 365px;
+    border-radius: 0px;
+}
+
+.hebergementMain{
+    display:block ; 
+    background-color: #F2F2F2;
+    height: 626px;
+width: 880px;
+left: 50px;
+top: 426px;
+radius : 4px; 
+border-radius: 25px;
+justify-content: flex-start;
+margin: ;
+
+
+
+
+}
+.hebergementMainHeaderTitre{
+font-size: 22px;
+line-height: 26px;
+Line-height: 100%;
+Align: Left;
+Vertical-align: Top;
+
+
+}
+
+.hebergementMainTable{
+height: 199px;
+width: 246px;
+left: 40px;
+top: 91px;
+border-radius: 20px;
+background-color:#FFFFFF;
+display:grid;
+flex-direction: row;
+justify-content: space-between;
+margin-left:40px;
+margin-top: ;
+
+
+
+
+}
+.populaires{
+    display:flex;
+ 
+}
