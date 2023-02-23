@@ -1,9 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
+*{
+    margin:0;
+    padding:0;
+    border:none; 
+    box-sizing: border-box;
+    }
+
+
+.bordure{
+    border:solid 1px red
+}
 
 body{
     font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    
     }
+
+ h1,h2{
+    font-size: 22px;
+    font-weight: 700;
+    margin:15px 0;
+    }
+
+p{
+    margin:15px 0;
+}
 .page{
     width: 100%;
     max-width: 1440px;
@@ -52,72 +76,63 @@ header > nav > a:hover{
    
 }
 
-main >div >h1{
 
-    font-size: 19px;
 
-}
-main >div >p{
-    font-size: 16px;
-}
-#searchBar{
+form{
 display:flex;
-flex-direction:row ;
+
 }
 
-#input-main-location {
+.icon-location{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height:50px;
+    border-radius: 15px 0 0 15px ;
+    background-color: #F2F2F2;
 
-    height: 49px;
-    width: 332px;
-    left: 55px;
-    top: 199px;
+}
+
+input{
+    font-weight: 700;
+    font-size: 18px;
+    font-family: raleway,sans-serif;
+    height: 50px;
+    width: 230px;
     border-radius: 0px;
-    
-
-        
+    padding:0 15px;
+          
 }
-#location{
-    display: flex;
-    flex-direction: row;
-    height: 18px;
-width: 14px;
-left: 18px;
-top: 16px;
-border-radius: 0px;
+button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0065Fc;
+    color: white;
+    font-weight: 700;
+    font-size: 18px; 
+    font-family: raleway,sans-serif;
+    border-radius:0 15px 15px 0 ;
+    height: 50px;
+    padding : 0 15px ; 
 
+}
+.recherche-texte{
+
+}
+
+.recherche-loupe{
+    display:none;
 }
 #search-bar {
     display: flex;
      height: 45px;
      margin-top: 15px ;
 }
-#button-search{
-    display:flex;
-    flex-direction: row;
-    background-color: #0065Fc;
-    color: white;
-    font-weight: bold;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border:none; 
-    width: 132px;
-    height: 49px;
 
-}
-#magnifying-glass {
-    display:none; 
-    
-}
-#location{
-    display:flex;
-    width: 50px;
-    height: 49px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px 0 0 15px ;
-    background-color: #F2F2F2;
 
-}
+
 
 .filterBar{
     
