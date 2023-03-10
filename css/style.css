@@ -125,132 +125,176 @@ button{
 .recherche-loupe{
     display:none;
 }
+
 #search-bar {
-    display: flex;
-     height: 45px;
-     margin-top: 15px ;
+    height: 45px;
+    margin-top: 15px ;
 }
 
 
+.filtres{
+    display:flex;
 
-
-.filterBar{
-    margin : 17px;
-    font-size: 12px;
-    display: grid;
-  
+}
+.filtres h3{
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.iconsFilters{
+    display:flex;
+    gap:15px;
 }
 
-
-
-.iconsFilter i{
-    display: flex;
-    justify-content: space-around;
-    align-items:center;
-    padding: 10px 0px 10px 10px;
-    gap: 10px;
-    width: 22px;
-    height: 22px;
-    color:#0065Fc;
-    border-radius: 100%;
-    height: 10px;
+.iconsFilters div{
+     display:flex;
+     align-items: center;
+     flex-wrap: nowrap;
+     border: 2px solid #d9d9d9;
+     transition-duration: 0.3s;
+     cursor: pointer;
+     font-weight: 700;
+     font-size: 17px;
+     height: 48px;
+     padding:0 15px;
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+     border-bottom-right-radius: 25px;
+     border-bottom-left-radius: 25px;
    
-}
-.iconsFilter div{
-   display:flex;
-
-    border: 2px solid #d9d9d9; 
-    margin: 15px;
-    transition-duration: 0.1s;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 17px;
-    width: 175px;
-    height: 48px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-  
+ }
+.iconsFilters i{
+    color:#0065Fc;
+    margin-right: 10px;
 }
 
-.iconsFilter :hover{
+
+
+.iconsFilters :hover{
     background-color: #deebff;
 }
 
-.info i {
-color:#0065Fc;
-
-
-}
-
-.info p {
-    display: initial ;
-    margin : 17px;
-    font-size: 12px;
-   
-}   
 .info{
-    height: 24px;
-    width: 447px;
-    left: 59px;
-    top: 365px;
-    border-radius: 0px;
+    display:flex;
+    align-items:center;
+
+  
 }
 
-.hebergementMain{
-    display:block ; 
-    background-color: #F2F2F2;
-    height: 626px;
-width: 880px;
-left: 50px;
-top: 426px;
-radius : 4px; 
-border-radius: 25px;
-justify-content: flex-start;
-margin: ;
+.info i {
+    color:#0065Fc;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    
+    }
+.info p {
+    margin: 0;
+    border:solid 1px #d9d9d9;
+    font-size: 12px;
+}
 
-
-
+.hebergement-et-populaires{
+    display:flex;
+    justify-content: space-between;
+    width: 66%; 
+    border-radius: 25px;
+    padding:25px;
+    
+}
+.hebergement{
+    
+    background-color: #d9d9d9;
+    width: 66%; 
+    border-radius: 25px;
+    padding:25px;
+    
 
 }
+   
+
 .hebergementMainHeaderTitre{
-font-size: 22px;
-line-height: 26px;
-Line-height: 100%;
-Align: Left;
-Vertical-align: Top;
-
-
+    font-size: 22px;
+    line-height: 26px;
+    Line-height: 100%;
+    Vertical-align: Top;
 }
 
 .hebergementMainTable{
-display: flex;
-justify-content: space-between;
-justify-content: space-around;
-height: 199px;
-width: 246px;
-left: 40px;
-top: 91px;
-border-radius: 20px;
-background-color:#FFFFFF;
-display:grid;
-margin-left:40px;
-margin-top: ;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    column-gap: 15px;
+    row-gap: 30px;
+   
+   
+}
+.hebergementMainTable > a{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding:5px;
+  
 }
 
 .hebergementMainTableFigure > img{
-    border-radius:0 15px 15px 0 ;
+    border-radius:15px 15px 0 0 ;
+    height: 124px;
+    width: 100%;
+}
+.hebergementMainTableFigure > figcaption {
+    padding: 5px 10px ;
 
 }
+
 .hebergementMainTableStars{
-color: #0065Fc;
+    color: #0065Fc;
 
 }
-
-
 
 .populaires{
-    display:flex;
- 
+
+    background-color: #d9d9d9;
+    width: 34%; 
+    border-radius: 25px;
+    padding:25px;
+
+}
+
+.populairesMainHeaderTitre{
+
+}
+.populairesMainTable{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr; ;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+
+}
+.populairesMainTable > a{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding:25px;
+    margin: 13px;
+    
+   
+  
+}
+.populairesMainTableFigure >  img{
+    border-radius:15px 0 0 15px;
+    position: absolute ;
+    height: 20%;
+
+}
+.populairesMainTableFigure > figcaption {
+    padding: 5px 10px ;
+    position: absolute;
+
+}
+
+.populairesMainTableStars{
+color: #0065Fc;
 }
