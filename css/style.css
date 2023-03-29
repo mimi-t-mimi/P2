@@ -19,15 +19,22 @@ body{
     
     }
 
- h1,h2{
+h1,h2{
     font-size: 22px;
     font-weight: 700;
     margin:15px 0;
     }
+    
+h3 {
+    font-weight: 700;
+    margin:15px 0;
+    font-size: 16px;
+}
 
 p{
     margin:15px 0;
 }
+
 .page{
     width: 100%;
     max-width: 1440px;
@@ -45,9 +52,6 @@ header{
     justify-content: space-between;
   
 }
-    
-
-
 
 header > a > img{
    width: 61px;
@@ -190,33 +194,31 @@ button{
     align-items: center;
     justify-content: center;
     margin-right: 5px;
-    
-    }
+}
+
 .info p {
     margin: 0;
     border:solid 1px #d9d9d9;
     font-size: 12px;
 }
 
-.hebergement-et-populaires{
+.hebergements-et-populaires{
     display:flex;
-    justify-content: space-between;
-    width: 66%; 
-    border-radius: 25px;
-    padding:25px;
-    
+    gap:30px;
+    margin-top: 30px;
 }
-.hebergement{
-    
+.hebergements{
     background-color: #d9d9d9;
-    width: 66%; 
+    width: 70%; 
     border-radius: 25px;
     padding:25px;
-    
+}
 
+.hebergements p {
+    font-size: 14px;
+    margin: 15px 0px 5px 0px;
 }
    
-
 .hebergementMainHeaderTitre{
     font-size: 22px;
     line-height: 26px;
@@ -225,76 +227,165 @@ button{
 }
 
 .hebergementMainTable{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    column-gap: 15px;
-    row-gap: 30px;
-   
-   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
 }
-.hebergementMainTable > a{
+
+.hebergement{
     background-color: #FFFFFF;
     border-radius: 15px;
     padding:5px;
-  
+    width:31%;
 }
 
-.hebergementMainTableFigure > img{
+.hebergement > figure > img{
     border-radius:15px 15px 0 0 ;
     height: 124px;
     width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
-.hebergementMainTableFigure > figcaption {
-    padding: 5px 10px ;
+
+.hebergement > Figure > figcaption {
+    padding: 5px 15px ;
 
 }
 
-.hebergementMainTableStars{
+.hebergement div {
     color: #0065Fc;
-
+    padding:0 15PX;
+    margin: 0 15px 5px 15px; 
 }
 
 .populaires{
-
     background-color: #d9d9d9;
-    width: 34%; 
     border-radius: 25px;
     padding:25px;
-
+    width: 30%;
 }
 
-.populairesMainHeaderTitre{
-
-}
 .populairesMainTable{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr; ;
-    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
     column-gap: 15px;
-
 }
+
 .populairesMainTable > a{
     background-color: #FFFFFF;
     border-radius: 15px;
-    padding:25px;
-    margin: 13px;
-    
-   
-  
+    padding:5px;
 }
+
+.populairesMainTableFigure{
+    display: flex;
+}
+
 .populairesMainTableFigure >  img{
     border-radius:15px 0 0 15px;
-    position: absolute ;
-    height: 20%;
+    height: 144px;
+    width: 123px;
+    object-fit: cover;
+    object-position: center center;
 
 }
 .populairesMainTableFigure > figcaption {
-    padding: 5px 10px ;
-    position: absolute;
+    padding: 5px 10px;
 
 }
 
 .populairesMainTableStars{
 color: #0065Fc;
 }
+
+
+/* style du bloc activités à marseille  */
+
+#activites-marseille {
+    
+    display:flex;
+    flex-direction:column;
+}
+
+#activites-marseille >h2 { 
+    padding : 25px
+
+}
+
+.container-activites{
+display:flex;
+justify-content: space-between;
+flex-direction: row;
+}
+.activites {
+margin:0; 
+width: 40%;
+height: 450px;
+padding-left: 25px;
+padding-right: 25px;
+}
+
+.activites > figure {
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 8px 11px -6px #9a9a9a;
+    
+}
+
+.activites > figure > img{
+    width:100% ;
+    height: 450px;
+    object-position: center center;
+    object-fit: cover;
+
+}
+
+.activites > figure > figcaption{
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+/* style du footer */
+
+
+footer {
+    margin-top: 95px; 
+    padding-bottom: 10px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 30px;
+  }
+  .footer-title {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding-right: 50px;
+  }
+  footer ul {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    list-style: none;
+    text-align: left;
+    padding-left: 0;
+  }
+  footer li {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 0px;
+    float: initial;
+  }
+  footer li a {
+    padding-left: 0;
+  }
+
+  footer li a:hover {
+    color: #0065fc;
+  }
+  
+/* fin du style footer  */
