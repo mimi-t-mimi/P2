@@ -27,12 +27,12 @@ h1,h2{
     
 h3 {
     font-weight: 700;
-    margin:15px 0;
     font-size: 16px;
+    margin:15px;
 }
 
 p{
-    margin:15px 0;
+    margin: 10px 0;
 }
 
 .page{
@@ -203,7 +203,6 @@ button{
 
 .info p {
     margin: 0;
-    font-size: 12px;
 }
 /* bloc hebergement et populaire  */
 .hebergements-et-populaires{
@@ -213,14 +212,18 @@ button{
 }
 .hebergements{
     background-color: #d9d9d9;
-    width: 70%; 
+    width: 65%; 
     border-radius: 25px;
     padding:25px;
 }
 
+
 .hebergements p {
     font-size: 14px;
     margin: 15px 0px 5px 0px;
+}
+.hebergement > figure > figcaption > h3 {
+margin: 0;
 }
    
 .hebergementMainHeaderTitre{
@@ -243,7 +246,8 @@ button{
     border-radius: 15px;
     padding:5px;
     width:31%;
-}
+    box-shadow: 0px 8px 11px -6px #9a9a9a;
+ }
 
 .hebergement > figure > img{
     border-radius:15px 15px 0 0 ;
@@ -253,42 +257,52 @@ button{
     object-position: center center;
 }
 
-.hebergement > Figure > figcaption {
-    padding: 5px 15px ;
-
+.hebergement > figure > figcaption {
+    padding: 5px 10px ;
 }
 
 .hebergement div {
     color: #0065Fc;
-    margin: 0 15px 5px 15px; 
+    margin: 0 0px 5px 10px; 
 }
 
 /* style les plus populaires */
+
 .populaires{
     background-color: #d9d9d9;
     border-radius: 25px;
     padding:25px;
-    width: 30%;
-   
+    width: 35%;
+}
+.populaires p {
+    font-size: 14px ;
 }
 
+.populaires h2 {
+    display: flex; 
+    justify-content: space-between;
+}
+.populaires h3 {
+    margin:0;
+}
 .populairesMainTable{
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.populairesMainTable > a{
+.populaire {
     background-color: #FFFFFF;
     border-radius: 15px;
     padding:5px;
+    box-shadow: 0px 8px 11px -6px #9a9a9a;
 }
 
-.populairesMainTableFigure{
+.populaire > figure{
     display: flex;
 }
 
-.populairesMainTableFigure >  img{
+.populaire > figure >  img{
     border-radius:15px 0 0 15px;
     height: 144px;
     width: 123px;
@@ -296,18 +310,19 @@ button{
     object-position: center center;
 
 }
-.populairesMainTableFigure > figcaption {
+.populaire > figure > figcaption {
     padding: 5px 10px;
 
 }
 
-.populairesMainTableStars{
-    color: #0065Fc;
+.grisF2F2F2 {
+    color: #F2F2F2;
 }
-.fa-regular{
-    color:#9a9a9a;
+.populaire div {
+color: #0065Fc;
+}
    
-}
+
 
 /* style du bloc activités à marseille  */
 
@@ -317,7 +332,7 @@ button{
     flex-direction:column;
 }
 
-#activites-marseille >h2 { 
+#activites-marseille > h2 { 
     padding : 25px
 
 }
