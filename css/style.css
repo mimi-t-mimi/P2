@@ -80,7 +80,7 @@ header > nav > a:hover{
    
 }
 
-
+/* formulaire de recherche */
 
 form{
 display:flex;
@@ -135,10 +135,15 @@ button{
     margin-top: 15px ;
 }
 
-
+/* style filtre */
 .filtres{
     display:flex;
-
+  border-radius: 25px;
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 .filtres h3{
     display: flex;
@@ -181,27 +186,26 @@ button{
 .info{
     display:flex;
     align-items:center;
-
-  
 }
 
 .info i {
-    color:#0065Fc;
-    height: 21px;
-    width: 21px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid #d9d9d9;
+    margin-left: 0px;
+    padding-left: 11px;
+    padding-top: 5px;
+    color: #0065fc;
+    font-size: 15px;
+    margin-right: 10px;
 }
 
 .info p {
     margin: 0;
-    border:solid 1px #d9d9d9;
     font-size: 12px;
 }
-
+/* bloc hebergement et populaire  */
 .hebergements-et-populaires{
     display:flex;
     gap:30px;
@@ -233,6 +237,7 @@ button{
     row-gap: 20px;
 }
 
+
 .hebergement{
     background-color: #FFFFFF;
     border-radius: 15px;
@@ -255,21 +260,22 @@ button{
 
 .hebergement div {
     color: #0065Fc;
-    padding:0 15PX;
     margin: 0 15px 5px 15px; 
 }
 
+/* style les plus populaires */
 .populaires{
     background-color: #d9d9d9;
     border-radius: 25px;
     padding:25px;
     width: 30%;
+   
 }
 
 .populairesMainTable{
     display: flex;
     flex-direction: column;
-    column-gap: 15px;
+    row-gap: 15px;
 }
 
 .populairesMainTable > a{
@@ -296,9 +302,12 @@ button{
 }
 
 .populairesMainTableStars{
-color: #0065Fc;
+    color: #0065Fc;
 }
-
+.fa-regular{
+    color:#9a9a9a;
+   
+}
 
 /* style du bloc activités à marseille  */
 
@@ -389,3 +398,88 @@ footer {
   }
   
 /* fin du style footer  */
+
+
+/* ************************************************************************************************************************** */
+                                                /* RESPONSIVE TABLETTE - 768px - 991px */
+/* ************************************************************************************************************************** */
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+
+    /* Debut header - tablette */
+  
+    #logo-booki {
+      width: 20%;
+    }
+    header a {
+      font-size: 15px;
+      border-bottom: 4px solid #f2f2f2;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    header a:hover {
+      color: #0065fc;
+      border-bottom: 4px solid #0065fc;
+      padding-bottom: 5px;
+      border-top: none;
+    }
+ 
+    }
+
+
+
+
+/* ************************************************************************************************************************** */
+                                                /* RESPONSIVE MOBILE */
+/* ************************************************************************************************************************** */
+
+
+ /* Debut header - mobile */
+
+@media screen  and (max-width: 767px) {
+ .body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #logo-booki {
+    width: 32%;
+    margin-left: 50px;
+  
+  }
+  h1 {
+    font-size: 24px; 
+
+  }
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5%;
+  }
+  nav {
+    text-align: center;
+    width: 100%;
+    padding-top: 35px;
+  }
+ 
+
+/* fin header - mobile */
+  /* Début formulaire de recherche - mobile */
+
+  .form {
+    max-width: 40%;
+    min-width: 95%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+/* debut filtres - mobile */
+
+.filters {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 98%;
+}
+}
