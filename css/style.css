@@ -62,11 +62,8 @@ header > a > img{
 header > nav{
     display:flex;
     gap: 15px;
-  
-    
-    
-
 }
+
 header > nav > a{
   padding-top: 48px;  
   padding-left: 25px;
@@ -419,14 +416,11 @@ footer {
                                                 /* RESPONSIVE TABLETTE - 768px - 991px */
 /* ************************************************************************************************************************** */
 
-@media all and (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
 
     /* Debut header - tablette */
   
-    #logo-booki {
-      width: 20%;
-    }
-    header a {
+    /* header a {
       font-size: 15px;
       border-bottom: 4px solid #f2f2f2;
       padding-bottom: 5px;
@@ -438,7 +432,7 @@ footer {
       border-bottom: 4px solid #0065fc;
       padding-bottom: 5px;
       border-top: none;
-    }
+    } */
  
     }
 
@@ -452,15 +446,10 @@ footer {
 
  /* Debut header - mobile */
 
-@media screen  and (max-width: 767px) {
+@media (max-width: 767px) {
  .body {
     width: 100%;
     margin: 0 auto;
-  }
-  #logo-booki {
-    width: 32%;
-    margin-left: 50px;
-  
   }
   h1 {
     font-size: 24px; 
@@ -469,8 +458,6 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-    margin-top: 5%;
   }
   nav {
     text-align: center;
@@ -478,6 +465,20 @@ footer {
     padding-top: 35px;
   }
  
+  header > nav > a{ 
+    padding: 0px 0 15px 0;
+    width: 50%;
+    text-align: center;
+    display:inline-block;
+    border-bottom: transparent 3px solid;
+    border-top: none;
+  }
+  header > nav > a:hover{
+      border-bottom: 3px solid;
+      border-top: none;
+     
+  }
+  
 
 /* fin header - mobile */
   /* Début formulaire de recherche - mobile */
