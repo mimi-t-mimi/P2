@@ -475,10 +475,8 @@ footer {
   }
   header > nav > a:hover{
       border-bottom: 3px solid;
-      border-top: none;
-     
+      border-top: none; 
   }
-  
 
 /* fin header - mobile */
   /* Début formulaire de recherche - mobile */
@@ -490,12 +488,18 @@ footer {
     position: relative;
   }
 
+  /* Fin formulaire de recherche - mobile */
+  /* debut filtres - mobile */
 
-/* debut filtres - mobile */
-
-.filters {
+  .filters {
     flex-direction: row;
     flex-wrap: wrap;
     width: 98%;
+  }
+  
+  #filters h3{
+    width: 100%;
+  }
+
 }
-}
+  /* fin filtres - mobile */
