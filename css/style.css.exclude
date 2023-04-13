@@ -7,12 +7,9 @@
     box-sizing: border-box;
     }
 
-html {
-        scroll-behavior: smooth;
-      }
 
 .bordure{
-    border:solid 0px red
+    border:solid 1px red
 }
 
 body{
@@ -112,7 +109,6 @@ input{
     width: 230px;
     border-radius: 0px;
     padding:0 15px;
-    border:solid 1px #F2F2F2;
           
 }
 button{
@@ -322,18 +318,11 @@ margin: 0;
 }
 .populaire > figure > figcaption {
     padding: 5px 10px;
-    display: flex;
-    flex-direction: column;
 
 }
-.populaire > figure > figcaption >  p {
-    flex-grow: 1;
-
-}
-.populaire i {
+.populaire i{
     font-size: 12px;
 }
-
 .grisF2F2F2 {
     color: #F2F2F2;
 }
@@ -345,27 +334,27 @@ color: #0065Fc;
 
 /* style du bloc activités à marseille  */
 
-.activites-marseille {
+#activites-marseille {
     
     display:flex;
     flex-direction:column;
 }
 
-.activites-marseille > h2 { 
+#activites-marseille > h2 { 
     padding : 25px
 
 }
 
 .container-activites{
 display:flex;
+justify-content: space-between;
 flex-direction: row;
-column-gap: 30px;
-
 }
 .activites {
 margin:0; 
-width: 25%;
-
+width: 40%;
+padding-left: 25px;
+padding-right: 25px;
 }
 
 .activites > figure {
@@ -378,20 +367,15 @@ width: 25%;
 
 .activites > figure > img{
     width:100% ;
-    height: 380px;
+    height: 450px;
     object-position: center center;
     object-fit: cover;
 
 }
 
 .activites > figure > figcaption{
-    height: 60px;
-    display: flex;
-    align-items: center;
-     padding: 5px 10px;
-}
-.activites h3 {
-    margin: 0;
+    padding: 5px 10px;
+    white-space: nowrap;
 }
 
 /* style du footer */
@@ -444,21 +428,7 @@ footer {
 
 @media (max-width: 991px) {
 
-    /* Debut header - tablette */
-  
-    /* header a {
-      font-size: 15px;
-      border-bottom: 4px solid #f2f2f2;
-      padding-bottom: 5px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-    header a:hover {
-      color: #0065fc;
-      border-bottom: 4px solid #0065fc;
-      padding-bottom: 5px;
-      border-top: none;
-    } */
+
  .hebergements-et-populaires {
     flex-direction:column;
  }
@@ -467,29 +437,28 @@ footer {
  }
  .populaires {
     width: 100%;
+
  }
-.populairesMainTable{
-    flex-direction: row;
-    justify-content: space-between;
-    /* column-gap: 15px; */
-}
-
-.populaire > figure >  img{
-    width: 80px;
-}
-
  .populaire {
-    width: 31%;
- }
-
- .activites > figure > img {
-    height: 200px;
- }
-
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding:5px;
+    box-shadow: 0px 8px 11px -6px #9a9a9a;
+    width:31%;
+}
+.populairesMainTable{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.populaire > figure >  img{
+    border-radius:15px 0 0 15px;
+    height: 144px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center center;
 
 }
-
-
 
 
 /* ************************************************************************************************************************** */
@@ -544,15 +513,6 @@ footer {
     margin: 0 auto;
     position: relative;
   }
-  input{
-    flex-grow: 1;
-}
-.recherche-texte{
-    display:none;
-}
-.recherche-loupe{
-    display:block;
-}
 
   /* Fin formulaire de recherche - mobile */
 
@@ -567,17 +527,14 @@ footer {
 }
 .populaire {
     width: 100%;
- }
- .populaire > figure >  img{
-    width: 120px;
 }
-
 .populairesMainTable{
-    flex-direction: column;
+    display: flex;
+    flex-direction:row;
+
     row-gap: 15px;
 }
-
-.hebergements{
+ .hebergements{
     background-color: #FFFFFF;
     border-radius: 0 ;
  }
@@ -598,17 +555,18 @@ footer {
 .container-activites {
     flex-direction:column;
     row-gap: 15px; 
-    /* width: 100%; */
-}
 
+}
 .activites {
     width: 100%;
 }
-
 .activites > figure > img{
+    width:100% ;
     height: 141px;
-}
+    object-position: center center;
+    object-fit: cover;
 
+}
 /* .activites > figure > figcaption{
     padding: 5px 10px;
 } */
@@ -618,9 +576,14 @@ footer {
 
   /* debut - footer - mobile */
 
- footer {
-  
+ .footer {
     flex-direction: column;
+    /* white-space: wrap;
+    flex-wrap: nowrap;
+    width:100%;
+    justify-content :space-around 
+ */
  }
+
+
   /* fin - footer - mobile */
-}
