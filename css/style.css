@@ -23,12 +23,12 @@ h1,h2{
     font-size: 22px;
     font-weight: 700;
     margin:15px 0;
-    }
+}
     
 h3 {
     font-weight: 700;
     font-size: 16px;
-    margin:15px;
+    margin:15px 0;
 }
 
 p{
@@ -50,6 +50,7 @@ header{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
+    padding: 0 20px;
   
 }
 
@@ -76,6 +77,11 @@ header > nav > a:hover{
     color:#0065Fc;
    
 }
+
+main {
+    padding : 0 20px
+}
+
 
 /* formulaire de recherche */
 
@@ -134,22 +140,21 @@ button{
 
 /* style filtre */
 .filtres{
-    display:flex;
-  border-radius: 25px;
-  padding-right: 20px;
+  display:flex;
+  flex-wrap: wrap;
   margin-top: 15px;
-  margin-left: 20px;
   margin-bottom: 10px;
   cursor: pointer;
 }
-.filtres h3{
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
+
+.filtres h3 {
+ padding-right: 15px;
 }
+
 .iconsFilters{
     display:flex;
     gap:15px;
+    flex-wrap: wrap;
 }
 
 .iconsFilters div{
@@ -279,6 +284,10 @@ margin: 0;
     display: flex; 
     justify-content: space-between;
 }
+.bluechart {
+    color: #0065Fc;
+
+} 
 .populaires h3 {
     margin:0;
 }
@@ -433,8 +442,17 @@ footer {
       padding-bottom: 5px;
       border-top: none;
     } */
- 
-    }
+ .hebergements-et-populaires {
+    flex-direction:column;
+ }
+ .hebergements{
+    width: 100%;
+ }
+ .populaires {
+    width: 100%;
+ }
+
+}
 
 
 
@@ -458,6 +476,7 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
+    padding:0; 
   }
   nav {
     text-align: center;
@@ -477,6 +496,9 @@ footer {
       border-bottom: 3px solid;
       border-top: none; 
   }
+  .iconsFilters div{
+   width: 48%;
+  }
 
 /* fin header - mobile */
   /* Début formulaire de recherche - mobile */
@@ -489,17 +511,58 @@ footer {
   }
 
   /* Fin formulaire de recherche - mobile */
-  /* debut filtres - mobile */
 
-  .filters {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 98%;
-  }
-  
-  #filters h3{
-    width: 100%;
-  }
-
+  /* debut de la section hébergement et populaires -mobile  */
+ 
+.hebergements-et-populaires{
+    flex-direction: column-reverse;
 }
-  /* fin filtres - mobile */
+.populaires {
+    background-color: #F2F2F2;
+    border-radius: 0px;
+}
+ 
+ .hebergements{
+    background-color: #FFFFFF;
+    border-radius: 0 ;
+ }
+ .hebergementMainTable {
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: column;
+ }
+  .hebergementMainTable a {
+    width:100%;
+
+  }
+
+/* fin de la section hébergement et populaires -mobile-  */
+
+/* debut activités à Marseille */
+
+.container-activites {
+    flex-direction:column;
+    column-gap: 15px; 
+    width: 100%;
+}
+
+/* .activites > figure > figcaption{
+    padding: 5px 10px;
+} */
+    
+
+/* fin activités à Marseille */
+
+  /* debut - footer - mobile */
+
+ .footer {
+    flex-direction: column;
+    /* white-space: wrap;
+    flex-wrap: nowrap;
+    width:100%;
+    justify-content :space-around 
+ */
+ }
+
+
+  /* fin - footer - mobile */
